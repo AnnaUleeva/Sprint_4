@@ -55,20 +55,20 @@ public class OrderPage {
 
 
     //метод добавления значения в поле Имя
-    public void sendKeysInputName() {
-        webDriver.findElement(inputName).sendKeys("Анна");
+    public void sendKeysInputName(String name) {
+        webDriver.findElement(inputName).sendKeys(name);
     }
 
     //метод добавления значения в поле фамилия
-    public void sendKeysInputSurName() {
+    public void sendKeysInputSurName(String surname) {
 
-        webDriver.findElement(inputSurname).sendKeys("Улеева");
+        webDriver.findElement(inputSurname).sendKeys(surname);
     }
 
     //метод добавления значения в поле Адрес
-    public void sendKeysInputAddress() {
+    public void sendKeysInputAddress(String address) {
 
-        webDriver.findElement(inputAddress).sendKeys("Петербургская");
+        webDriver.findElement(inputAddress).sendKeys(address);
     }
 
     //клик по полю Станция метро
@@ -84,8 +84,9 @@ public class OrderPage {
     }
 
     //добавление телефона
-    public void sendKeysInputPhone() {
-        webDriver.findElement(inputPhone).sendKeys("+79999999999");
+    public void sendKeysInputPhone(String phone) {
+
+        webDriver.findElement(inputPhone).sendKeys(phone);
     }
 
     //клик по кнопке Далее
@@ -110,8 +111,8 @@ public class OrderPage {
     }
 
     //заполнить поле Комментарий
-    public void sendKeysInputComment() {
-        webDriver.findElement(inputComment).sendKeys("Хочу самокат");
+    public void sendKeysInputComment(String comment) {
+        webDriver.findElement(inputComment).sendKeys(comment);
     }
 
 
@@ -122,11 +123,13 @@ public class OrderPage {
 
     //метод открытия списка срока аренды
     public void clickInputRentalPeriod() {
+
         webDriver.findElement(inputRentalPeriod).click();
     }
 
     //метод выбора срока аренды
     public void clickPeriodDay() {
+
         webDriver.findElement(inputPeriodDay).click();
     }
 
